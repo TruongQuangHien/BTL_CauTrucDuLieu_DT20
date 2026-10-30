@@ -20,5 +20,5 @@ double tinhLuong(const NhanVien &nv) {
     double luongNgayCong = luongTheoHeSo * nv.ngayCong / 26.0;
     double luongOT = (luongTheoHeSo / 26.0 / 8.0) * HE_SO_OT * nv.gioOT;
     double luong = luongNgayCong + nv.phuCap + luongOT - tinhTienTru(nv);
-    return luong < 0 ? 0 : luong;     
+    return luong < 0 ? 0 : luong;    
 }
