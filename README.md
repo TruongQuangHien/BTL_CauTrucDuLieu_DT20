@@ -1,12 +1,6 @@
 <div align="center">
 
 # Hệ thống Quản lý Nhân sự & Bảng lương Cơ quan
-![C++](https://img.shields.io/badge/C%2B%2B-11-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-555555?style=for-the-badge)
-![Interface](https://img.shields.io/badge/Interface-Console-2E7D32?style=for-the-badge)
-![Data](https://img.shields.io/badge/Data-Text%20File-F9A825?style=for-the-badge)
-
-*Quản lý hồ sơ nhân sự và tính lương thực lĩnh, được xây dựng hoàn toàn bằng các cấu trúc dữ liệu tự cài đặt.*
 
 </div>
 
@@ -43,12 +37,15 @@
 
 ## Thông tin nhóm thực hiện
 
-| Họ và tên | Mã số sinh viên | Vai trò |
-|-----------|-----------------|---------|
-| *Điền họ tên* | *Điền MSSV* | *Điền vai trò* |
-| *Điền họ tên* | *Điền MSSV* | *Điền vai trò* |
+| STT | Họ và tên | MSSV | Phần phụ trách | Nội dung chính |
+|:---:|-----------|:----:|----------------|----------------|
+| 1 | Nguyễn Trung Hiếu | 6651020023 | Cấu trúc dữ liệu và tính lương | Khai báo các cấu trúc `NhanVien`, `Node`, `NodeLuong`, `LichSuLuong`, `ThaoTac`; khai báo hằng số tính lương và biến toàn cục; xây dựng hàm tính tiền khấu trừ và lương thực lĩnh |
+| 2 | Lê Gia Thịnh | 6651020082 | Cây BST nhân viên | Khởi tạo cây; tìm nhân viên theo mã; thêm nhân viên và kiểm tra trùng mã; tìm nút nhỏ nhất; xóa nút (lá, một con, hai con); đếm số nhân viên và giải phóng cây |
+| 3 | Phạm Ngọc Hàn | 6651020021 | Cây lương, nhập liệu và hiển thị | Khởi tạo, so sánh, thêm, tìm nút nhỏ nhất, xóa và giải phóng cây lương; nhập thông tin nhân viên; in thông tin một nhân viên; duyệt LNR để in danh sách |
+| 4 | Huỳnh Nguyễn Hoàng Phúc | 6651020067 | Quản lý nghiệp vụ nhân viên và tệp dữ liệu | Nhập chuỗi, nhập số; thêm, tìm, xóa, cập nhật nhân viên; đọc dữ liệu từ tệp khi khởi động và lưu khi thoát; đồng bộ cây nhân viên với cây lương |
+| 5 | Trương Quang Hiển | 6651020022 | Lịch sử, hoàn tác, thống kê, KPI và menu | Ghi và in lịch sử đổi lương; stack và hoàn tác xóa; tìm theo mức lương; thống kê lương, tổng quỹ lương, tổng tiền khấu trừ; xếp loại KPI; xây dựng menu và hàm `main` |
 
-**Giảng viên hướng dẫn:** *Điền tên giảng viên*
+
 
 ---
 
@@ -213,7 +210,7 @@ git clone <đường-dẫn-repository>
 cd <tên-thư-mục-dự-án>
 ```
 
-Hoặc đặt file `BTLCAUTRUC.cpp` vào một thư mục riêng trên máy.
+Hoặc đặt file `BtlCauTruc.cpp` vào một thư mục riêng trên máy.
 
 ### Bước 3. Kiểm tra trình biên dịch
 
@@ -228,18 +225,18 @@ Nếu lệnh in ra thông tin phiên bản thì môi trường đã sẵn sàng.
 **Bằng g++ (Windows, Linux, macOS):**
 
 ```bash
-g++ -std=c++11 -Wall -O2 BTLCAUTRUC__2_.cpp -o quanlynhansu
+g++ -std=c++11 -Wall -O2 BtlCauTruc.cpp -o quanlynhansu
 ```
 
 **Bằng Visual Studio (Developer Command Prompt):**
 
 ```bat
-cl /EHsc /std:c++14 BTLCAUTRUC.cpp /Fe:quanlynhansu.exe
+cl /EHsc /std:c++14 BtlCauTruc.cpp /Fe:quanlynhansu.exe
 ```
 
 **Bằng IDE (Dev-C++ / Code::Blocks):**
 
-1. Mở file `BTLCAUTRUC.cpp`.
+1. Mở file `BtlCauTruc.cpp`.
 2. Bật chuẩn C++11 trong cài đặt trình biên dịch (Dev-C++: *Tools → Compiler Options → Settings → Code Generation → Language standard = ISO C++11*).
 3. Nhấn **F11** (Dev-C++) hoặc **F9** (Code::Blocks) để biên dịch và chạy.
 
@@ -323,6 +320,8 @@ Khi khởi động, chương trình hiển thị menu điều khiển. Nhập s�
 | Xếp loại KPI | O(n²) | Dùng sắp xếp đổi chỗ đơn giản |
 
 ---
+
+
 
 <div align="center">
 
